@@ -1,0 +1,223 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 1.2rem;
+    text-align:center;
+    margin-top: 0;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="date"] {
+    width: 100%;
+    padding: 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #007BFF;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  fieldset {
+    margin-top:5px;
+    border: 1px ;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  legend {
+    text-align:center;
+    padding: 0 10px;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .csv-type-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .csv-type-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .csv-type-container label {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  .csv-type-container input[type="checkbox"] {
+    display: none;
+  }
+  
+  .input-wrapper {
+    text-align: center;
+    display: inline-block;
+    width: 45%;
+    margin-right: 5%;
+    margin-bottom: 10px;
+  }
+  
+  .input-wrapper:last-child {
+    margin-right: 0;
+  }
+  
+  .input-wrapper-nombre input {
+    text-align: center;
+  }
+  .input-wrapper-disponibilidad {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  
+  .input-wrapper-disponibilidad input {
+    order: 2;
+  }
+  
+  .input-wrapper-disponibilidad input {
+    text-align: center;
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .input-wrapper-nombre {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  #message {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .success {
+    background-color: #DFF2BF;
+    border: 1px solid #4F8A10;
+    color: #4F8A10;
+  }
+  
+  .error {
+    background-color: #FFD2D2;
+    border: 1px solid #D8000C;
+    color: #D8000C;
+  }
+  
+  .csv-btn {
+    display: none;
+  }
+  
+  /* Add styles for the "Select All" label */
+  #select-all {
+    order: 1;
+    margin-left: 5px;
+    color: #666;
+  }
+  
+  .csv-type-container label[for="select-all"] {
+    order: 7;
+  }
+  
+  .csv-type-container label:not([for="select-all"]) {
+    order: 1;
+  }
+  
+  .csv-type-container label:not([for="select-all"]):hover {
+    background-color: #eee;
+  }
+  
+  #select-all:hover {
+    background-color: #eee;
+  }
+  
+  #select-all:checked + label[for="select-all"] {
+    color: white;
+    background-color: #007BFF;
+  }
+  
+  /* Add styles for selected checkboxes */
+  .csv-type-container input[type="checkbox"]:checked + label:not([for="select-all"]) {
+    color: white;
+    background-color: #007BFF;
+    border-color: #007BFF;
+  }
+  
+  .csv-type-container input[type="checkbox"]:checked + label[for="select-all"] {
+    color: red;
+    background-color: white;
+    border-color: #007BFF;
+  }
+  
+  .csv-btn-container {
+    text-align: center;
+  }
+  
+  .download {
+    margin: 5px auto 0;
+  }
+  
+  form#date-form {
+    text-align: center; /* add this line */
+  }
+  
+  @media screen and (max-width: 480px) {
+    .csv-type-container label {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  
+  

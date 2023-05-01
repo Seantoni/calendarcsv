@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador CSV de Calendario</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>CSV Calendario OS</h1>
+    <form id="date-form">
+            <div class="input-wrapper-nombre">
+        <label for="option-name">Opción</label>
+        <input type="text" id="option-name" required>
+      </div>
+      <div class="input-wrapper-disponibilidad">
+        <label for="availability">Disponibilidad</label>
+        <input type="number" id="availability" step="any" min="0" required>
+      </div>
+      <div>
+        <div class="input-wrapper">
+          <label for="start-date">Fecha Inicio</label>
+          <input type="date" id="start-date" required>
+        </div>
+        <div class="input-wrapper">
+          <label for="end-date">Fecha Final</label>
+          <input type="date" id="end-date" required>
+        </div>
+      </div>
+      <fieldset>
+        <legend>Días de la semana</legend>
+        <div class="csv-type-container">
+          <input type="checkbox" name="day-of-week" value="all" id="select-all">
+          <label for="select-all">Select All</label>
+          <input type="checkbox" name="day-of-week" value="0" id="sunday">
+          <label for="sunday">Sun</label>
+          <input type="checkbox" name="day-of-week" value="1" id="monday">
+          <label for="monday">Mon</label>
+          <input type="checkbox" name="day-of-week" value="2" id="tuesday">
+          <label for="tuesday">Tue</label>
+          <input type="checkbox" name="day-of-week" value="3" id="wednesday">
+          <label for="wednesday">Wed</label>
+          <input type="checkbox" name="day-of-week" value="4" id="thursday">
+          <label for="thursday">Thurs</label>
+          <input type="checkbox" name="day-of-week" value="5" id="friday">
+          <label for="friday">Fri</label>
+          <input type="checkbox" name="day-of-week" value="6" id="saturday">
+          <label for="saturday">Sat</label>
+        </div>
+      </fieldset>
+      <div class="csv-btn-container">
+        <button class="download">Generate and Download CSV</button>
+      </div>
+    </form>
+    <div id="message" class="hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
