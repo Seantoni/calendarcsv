@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function downloadCSV(dates, optionName, availPerRow) {
     const filename = `${optionName}.csv`;
-    const csvContent = 'data:text/csv;charset=utf-8,Date,Day,Disponibilidad\n' + dates.map(dateObj => `${dateObj.date},${dateObj.day},${availPerRow}`).join('\n');
+    const csvContent = 'data:text/csv;charset=utf-8,date,Day,quantity\n' + dates.map(dateObj => `${dateObj.date},${dateObj.day},${availPerRow}`).join('\n');
     const encodedUri = encodeURI(csvContent);
     const link = document.createElement('a');
     link.setAttribute('href', encodedUri);
